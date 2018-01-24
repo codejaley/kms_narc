@@ -1,0 +1,91 @@
+/* DMS scaffolds */
+//categories table
+php artisan generate:scaffold categories --fields="name:string,parent_id:integer,name_nepali:string,is_active:enum"
+
+
+//books table
+php artisan generate:scaffold books --fields="name:string,category_id:integer,description:text,description_nepali:text,name_nepali:string,is_active:enum"
+
+
+//files table
+php artisan generate:scaffold files --fields="name:string,book_id:integer,format:string,name_english:string,name_nepali:string,description:text,description_nepali:text,is_active:enum"
+
+//tags table
+php artisan generate:scaffold tags --fields="name:string,slug:string,is_active:enum"
+
+//table : book_tags
+php artisan generate:scaffold book_tags --fields="book_id:integer,tag_id:integer"
+
+
+/* THIS IS SCAFFOLD FOR TOWNSHIPS  */
+php artisan generate:scaffold news --fields="title:string, is_active:enum, sef:string,short_description:text,long_description:text,title_burmese:string,short_description_burmese:text,long_description_burmese:text"
+
+
+/* roles table */
+php artisan generate:scaffold roles --fields="name:string,is_active:enum"
+
+/* users table */
+php artisan generate:scaffold users --fields="role_id:integer,username:string,password:string,firstname:string,middlename:string,lastname:string,address string"
+
+
+/* countries table */
+php artisan generate:scaffold countries --fields="name:string,code:string,is_active:enum"
+
+
+/* projects table */
+php artisan generate:scaffold projects --fields="title:string,country_id:integer,approx_contract_value:string,location_country:text,client_id:integer,assignment_duration:string,total_assigned_person:integer,address:string,fund_provided_firm:string,start_date:date,end_date:date,fulltime_employees:text,joint_venture_partners:text,description:text,service_desription:text"
+
+/* clients table */
+php artisan generate:scaffold clients --fields="name:string,short_form:string,url:string,logo:string,is_active:enum"
+
+/* partners table */
+php artisan generate:scaffold partners --fields="name:string,short_form:string,url:string,logo:string,is_active:enum"
+
+/* staffs table */
+php artisan generate:scaffold staffs --fields="name:string,photo:string,staff_type:integer,is_active:enum"
+
+/* pages table */
+php artisan generate:scaffold pages --fields="title:string,slug:string,intro_text:text,description:text,is_active:enum"
+
+/* project_reports table */
+php artisan generate:scaffold project_reports --fields="report_name:string,project_id:integer,is_active:enum"
+
+/* project_reports table */
+php artisan generate:scaffold project_presentations --fields="project_id:integer,report_name:string,is_active:enum"
+
+/* project_briefs table */
+php artisan generate:scaffold project_briefs --fields="project_id:integer,report_name:string,is_active:enum"
+
+/* project_discussion_papers table */
+php artisan generate:scaffold project_discussion_papers --fields="project_id:integer,report_name:string,is_active:enum"
+
+/* project_training_materials table */
+php artisan generate:scaffold project_training_materials --fields="project_id:integer,report_name:string,is_active:enum"
+
+/* blogs table */
+php artisan generate:scaffold blogs --fields="title:string,intro_text:text,description:text,is_active:enum"
+
+
+/*albums table */
+php artisan generate:scaffold albums --fields="title:string,slug:string,description:text,is_active:enum"
+
+/*photos table */
+php artisan generate:scaffold photos --fields="album_id:integer,photo:string,caption:string,is_cover:integer,is_active:enum"
+
+/*comments table */
+php artisan generate:scaffold comments --fields="name:string,email:string,comment:text,is_active:enum"
+
+/*contacts table */
+php artisan generate:scaffold contacts --fields="contact_title:string,address:text,country:integer,phone:string,fax:string,email:string,is_active:enum"
+
+/*sliders table */
+php artisan generate:scaffold sliders --fields="title:string,content:text,photo:string,is_active:enum"
+
+/*vacancies table */
+php artisan generate:scaffold vacancies --fields="title:string,type:int,content:text,is_active:enum"
+
+
+/*settings table */
+php artisan generate:scaffold settings --fields="key:string,value:string"
+
+

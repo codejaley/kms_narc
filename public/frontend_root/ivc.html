@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agrifood</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/faviocn.ico">
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/agrifood.css" rel="stylesheet">
+
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <!-- To Animate Page -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <script type="text/javascript">//<![CDATA[
+    $(function(){
+        function onScrollInit( items, trigger ) {
+            items.each( function() {
+                var osElement = $(this),
+                        osAnimationClass = osElement.attr('data-os-animation'),
+                        osAnimationDelay = osElement.attr('data-os-animation-delay');
+
+                osElement.css({
+                    '-webkit-animation-delay':  osAnimationDelay,
+                    '-moz-animation-delay':     osAnimationDelay,
+                    'animation-delay':          osAnimationDelay
+                });
+
+                var osTrigger = ( trigger ) ? trigger : osElement;
+
+                osTrigger.waypoint(function() {
+                    osElement.addClass('animated').addClass(osAnimationClass);
+                },{
+                    triggerOnce: true,
+                    offset: '90%'
+                });
+            });
+        }
+
+        onScrollInit( $('.os-animation') );
+        onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+    });//]]>
+
+    </script>
+
+</head>
+
+<body>
+<!-- Top Row -->
+<div class="container fx-top">
+    <div class="row top_bar">
+        <!-- Logo -->
+        <div class="col-md-2 col-sm-12 logo">
+            <a href="index.html" class="logo-effect"><img src="img/logo.png" alt="agrifood logo" class="img-responsive"></a>
+        </div>
+        <!-- Slogan -->
+        <div class="col-md-7 col-sm-12 slogan">
+            <h2>
+                Smart Policies and <span class="green">Practices</span> for Shared Prosperity
+            </h2>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <!-- map -->
+                <div class="col-md-6 col-sm-6 map">
+                    <a href="#"><img src="img/map.png" alt="agrifood map" class="img-responsive grow"></a>
+                </div>
+                <!-- social -->
+                <div class="col-md-6 col-sm-6 ">
+                    <ul class="social">
+                        <li>
+                            <a target="_blank" href="#" class="facebook"><i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="twitter"><i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="linkedin"><i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="youtube"><i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top main_navigation" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-static-top" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left ul-alignment">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">1 Column About</a></li>
+                        <li><a href="#">2 Column About</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Services <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Inclusive Value Chains</a></li>
+                        <li><a href="#">Climate Safe Agriculture</a></li>
+                        <li><a href="#">Food Safety and Security</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Blog Home 1</a></li>
+                        <li><a href="#">Blog Home 2</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Job opportunities <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Job 1</a></li>
+                        <li><a href="#">Job 2</a></li>
+                        <li><a href="#">Job 3</a></li>
+                        <li><a href="#">Job 4</a></li>
+                        <li><a href="#">Job 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Photo Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container main_container conainer_aboutpage">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+       
+			<div class="col-md-12"> 	
+            	<div class="breadcrumb_wrapper">
+    				<ol class="breadcrumb">
+                        <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li class="active">Inclusive Value Chains</li>
+    				</ol>
+    				<hr>
+				</div>
+        	</div>
+
+<!--- Service Content goes here ------------------------------------------------------>
+		<div class="serv-cont">
+            
+            <div class="svc-container">
+            	<div class="col-md-7">
+                    	<div class="serv-txt">
+                        	<p>Sample Text: Historically, most smallholder farmers used a “subsistence model”—growing enough food for household consumption and selling any additional production through informal farm-gate aggregators.</p>
+                            <p>ACI’s value chain services promote a “commercial model”—investing in high-quality inputs and mechanization to boost both quality and quantity of production.</p>  
+                            <p>ACI helps smallholder farmers, farmer organizations and local small and mediums-sized businesses (SMEs) adopt best practices in production and processing to produce shared prosperity.</p>
+                        </div>
+                </div>
+               	<div class="col-md-5">
+                	<div class="serv-image-inner">
+                    	<a href="#" class="thumbnail"><img src="img/lukla-visit-1.jpg"></a>
+                        <div class="caption">
+                        	<h3>Caption for image</h3>
+                            <p>Some sample text. Some sample text.</p>
+                        </div>
+                    </div>
+             	</div>
+               
+            </div>
+            <div class="col-md-12 serv-top-bdrbx strips2">
+                <blockquote>
+                    <p>"Sample Text: Developing value chains that include smallholder and small-scale farmers is an imperative for rural economic development and enhanced "</p>
+                    <footer>Mr. Anonymous</footer>
+                </blockquote>
+            </div>
+            <div class="clearfix"></div>
+            <div class="svc-container">
+            	<div class="serv-table">
+                            <table class="table table-responsive table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Focal Area</th>
+                                        <th>Food Security and Food Safety</th>
+                                        <th>Previous Project Experience</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Policies and Strategies</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Food security and nutrition strategy</li>
+                                                <li>Resilience and disaster risk reduction</li>
+                                                <li>Public food distribution systems</li>
+                                                <li>Sanitary and Phytosanitary standards and harmonization</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Agriculture Competitiveness Project - Vietnam</a></li>
+                                                <li><a href="#">HIMALI- High Mountain Agribusiness - Nepal</a></li>
+                                                <li><a href="#">Disaster Risk Management - Cambodia</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td><strong>Field Practices</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Food security and nutrition strategy</li>
+                                                <li>Resilience and disaster risk reduction</li>
+                                                <li>Public food distribution systems</li>
+                                                <li>Sanitary and Phytosanitary standards and harmonization</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Agriculture Competitiveness Project - Vietnam</a></li>
+                                                <li><a href="#">HIMALI- High Mountain Agribusiness - Nepal</a></li>
+                                                <li><a href="#">Disaster Risk Management - Cambodia</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+           	</div>
+    <!-- /.row -->
+		</div>
+
+</div>
+</div><!-- /.container -->
+<!-- Footer -->
+<footer>
+
+    <div class="main_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Other Offices</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/finland.png" alt="finland" class="img-responsive country_flag">  Finland
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sweden.png" alt="finland" class="img-responsive country_flag">  Sweden
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/japan.png" alt="finland" class="img-responsive country_flag">  Japan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/austrillia.png" alt="finland" class="img-responsive country_flag">  Austrillia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/kenya.png" alt="finland" class="img-responsive country_flag">  Kenya
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-info-circle"></i>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-puzzle-piece"></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-magic"></i>
+                                Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-map-marker"></i>
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Contact Details</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-map-marker"></i>   378 Main Street England               </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                info@agrifoods.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-phone"></i>
+                                +1(44) 123-45-67
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <!--<h2>Contact Us</h2>-->
+                    <!--<form method="post" action="#">-->
+
+                    <!--<ul>-->
+                    <!--<li>-->
+                    <!--<input type="text" class="input-xlarge footer_form" placeholder="Enter Your Name" name="name" >-->
+                    <!--</li>-->
+                    <!--<li>-->
+
+                    <!--<input type="text" class="input-xlarge footer_form" placeholder="Enter Your Email" name="email" >-->
+
+                    <!--</li>-->
+                    <!--<li>-->
+
+                    <!--<input type="text" class="input-xlarge footer_form" placeholder="Enter Message" name="message"  >-->
+
+                    <!--</li>-->
+
+                    <!--<li>-->
+                    <!--<a href="#" class="btn btn-default readmore hover-shadow readmore_box">Send</a>-->
+                    <!--</li>-->
+                    <!--</ul></form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" copy_right">
+        <div class="container ">
+            <p>Copyright &copy; Agrifood Consulting International, 2009. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<a href="#" class="scrollup">Scroll</a>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/boot_select.js"></script>
+<script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+<script type="text/javascript" src="slider/engine1/script.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>
+<!-- Starting toTop plugin -->
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+    });
+</script>
+
+<script>
+    $(".dropdown-menu li a").click(function(){
+        var selText = $(this).text();
+        $(this).parents('.form-group').find('button[data-toggle="dropdown"]').html(selText+' <span class="caret"></span>');
+    });
+</script>
+
+<script>
+    $(function() {
+
+        var selectBox = $("select").selectBoxIt();
+
+    });
+</script>
+
+
+</body>
+
+</html>

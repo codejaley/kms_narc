@@ -1,0 +1,950 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/open-sans-fontfacekit/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/open-sans-fontfacekit/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-fontfacekit/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/open-sans-fontfacekit/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/open-sans-fontfacekit/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/open-sans-fontfacekit/OpenSans-Light-webfont.eot');
+    src: url('../fonts/open-sans-fontfacekit/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open-sans-fontfacekit/OpenSans-Light-webfont.woff') format('woff'),
+    url('../fonts/open-sans-fontfacekit/OpenSans-Light-webfont.ttf') format('truetype'),
+    url('../fonts/open-sans-fontfacekit/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/open-sans-fontfacekit/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/open-sans-fontfacekit/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open-sans-fontfacekit/OpenSans-Semibold-webfont.woff') format('woff'),
+    url('../fonts/open-sans-fontfacekit/OpenSans-Semibold-webfont.ttf') format('truetype'),
+    url('../fonts/open-sans-fontfacekit/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Global Styles */
+
+html,
+body {
+    height: 100%;     font-family: 'OpenSansRegular';
+}
+h2   {     font-family: 'OpenSansLight';     letter-spacing: 1px;  }
+body {
+    padding-top: 20px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+background: #f7f7f7 none repeat scroll 0 0;
+
+
+}
+p {
+    color: #797979;
+}
+ul{ padding: 0; list-style: none;}
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+	background: url('/images/footer-bg.jpg') no-repeat top center;
+	background-size: cover;
+}
+
+/*** Custom Css**/
+
+
+.login-box li {
+    display: inline-block;
+}
+.login-box li a {
+    color: #7d7d7d;
+    font-size: 14px;
+}
+.login-box li a:hover {
+    color: #6fb342;
+    font-size: 14px; text-decoration: none !important;
+}
+
+.login-box li.logged-out > a{ color: #ff6700;}
+
+
+.signup {
+    border-right: 1px solid #cbcbcb;
+    margin: 0 10px 0 0;
+    padding: 0 15px 0 0;
+}
+.login-box {
+    margin-right: 24px;
+}
+
+.custom_navigation {
+    background: #ffffff none repeat scroll 0 0;
+	border-radius: 10px 10px 0 0 !important;
+    border: 0 none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.custom_navigation .navbar-nav > li > a{ color: #7d7d7d;}
+.custom_navigation .navbar-nav > li > a.active, .custom_navigation .navbar-nav > li > a:hover { color: #6fb342}
+.navbar-brand {
+
+
+    height: auto;
+
+    padding: 5px 0;
+}
+
+.nav.navbar-nav.navbar-right a {
+
+    border-right: 1px solid #ececec;
+    padding: 35px 20px 28px;
+}
+.nav.navbar-nav.navbar-right li:last-child a{ border-right: 0;    padding-right: 36px;}
+
+.shadow {
+    box-shadow: 0 0 5px #bebebe;
+}
+.banner_main{ background: rgba(0, 0, 0, 0) url("../images/bg-banner.png") repeat scroll 0 0 / cover ;}
+.search_form {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 5px;
+    margin: 60px 0 57px 60px;
+    padding: 10px 20px 15px;
+}
+.form-control.search-input {
+    border: 2px solid #6fb342;
+    border-radius: 0;
+    height: 50px;
+    padding: 5px 13px;
+}
+/* Responsive Styles */
+.btn.dropdown-toggle.btn-info{ background: #6fb342 !important; border: 0;}
+
+.bg_green{
+ background: rgba(0, 0, 0, 0) url("../images/Rice-Paddies-Pokhara-banner.jpg") repeat scroll 0 0 / cover ;
+}
+
+
+.custom-button {
+    background-color: #ff6700;
+    border-color: #cc5200;
+    border-style: solid;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+
+
+    line-height: normal;
+
+    padding: 0.875rem 1.75rem 0.9375rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;  text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 300ms ease-out 0s;}
+.image-search{
+    margin-top: 58px;
+
+}
+
+h2 span{ color: #6fb342;}
+
+.side-box {
+    color: #ffffff;
+
+    padding-top: 66px;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+.bg_white{ background: #ffffff;}
+.bg_grey{
+    background: #f5f5f5;
+}
+.inner_container{padding: 50px 14px 50px 20px;}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    left: 0;
+    padding: 0 15px 20px 20px; right: 40%;
+
+    text-align: left;
+
+}
+.carousel.slide.carousel-fade {
+    border: 5px solid #6fb342;
+}
+.browse_repo {
+    background: #ffffff none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 10px 0;   border: 1px solid #d9d9d9;
+}
+.sub-header {
+    color: #a2a2a2;
+
+    font-size: 21px;
+    font-style: italic;
+    margin-top: -9px;
+}
+
+.browse_repo a {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #6d6d6d;
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 10px 10px 10px 11px;
+    width: 100%;
+}
+.browse_repo a.active, .browse_repo a:hover{ background: #6fb342; color: #ffffff; text-decoration: none;}
+
+.testimonials {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: 1px solid #ededed;
+
+    margin: 0 0 10px;
+    padding: 10px;
+}
+.testimonials img {
+    float: left;
+    padding: 0 10px 0 0;
+}
+.testimonials > h2 {
+    font-size: 18px;
+}
+.sub-header {
+    color: #a2a2a2;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: -9px;
+}
+
+.about-list span {
+    color: #6fb342;
+    display: block;
+    float: left;
+    font-size: 35px;
+    height: 104px;
+    margin: 0 13px 0 0;
+    padding: 20px 0 3px;
+    text-align: center;
+    width: 60px;
+}
+.side-box > p {
+    color: #ffffff;
+}
+
+
+footer {
+    margin: 0 -30px 0 0;
+}
+
+.footer-distributed{
+    /*background-color: #222222;*/
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+
+    padding: 55px 50px;
+    margin-top: 0px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #FFF;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  #B9D353;
+    text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #FFF;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-left h1 {
+    color: #FFF;
+    font-size: 20px;
+}
+.about-list > li {
+    display: inline-block;
+}
+.inner_container iframe {
+    height: 337px;
+}
+.heading-top {
+	font-family:"Times New Roman", Times, serif;
+	color: #3C7C0C;
+    display: block;
+    font-size: 3'8px;
+    margin: 0 0 5px;
+	font-weight: 700;
+	text-align:center;
+}
+
+
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project    	: Aether
+Version		: 1.0
+Last change	: 2015/03/27
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General Structure
+2. Anchor Link
+3. Text Outside the Box
+4. Main Form
+5. Login Button
+6. Form Invalid
+7. Form - Main Message
+8. Custom Checkbox & Radio
+9. Misc
+-------------------------------------------------------------------*/
+/*=== 1. General Structure ===*/
+html,
+body {
+    background: #efefef;
+    padding: 10px;
+
+}
+/*=== 2. Anchor Link ===*/
+a {
+    color: #aaaaaa;
+    transition: all ease-in-out 200ms;
+}
+a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+/*=== 3. Text Outside the Box ===*/
+.etc-login-form {
+    color: #919191;
+    padding: 10px 20px;
+}
+.etc-login-form p {
+    margin-bottom: 5px;    color: #ffffff;
+}
+.etc-login-form a{ color: #ffffff; font-weight: bold;}
+/*=== 4. Main Form ===*/
+.login-form-1 {
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+}
+.main-login-form {
+    position: relative;
+}
+.login-form-1 .form-control {
+    border: 0;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+    background: transparent;
+    color: #555555;
+    padding: 15px 0;
+    font-weight: bold;
+    height:auto;
+}
+.login-form-1 .form-control::-webkit-input-placeholder {
+    color: #999999;
+}
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+    color: #999999;
+}
+.login-form-1 .form-group {
+    margin-bottom: 0;
+    border-bottom: 2px solid #efefef;
+    padding-right: 20px;
+    position: relative;
+}
+.login-form-1 .form-group:last-child {
+    border-bottom: 0;
+}
+.login-group {
+    background: #ffffff;
+    color: #999999;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.login-group-checkbox {
+    padding: 5px 0;
+}
+/*=== 5. Login Button ===*/
+.login-form-1 .login-button {
+    background: #ff6700 none repeat scroll 0 0;
+    border: 5px solid #cf7d16;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+
+    color: #ffffff;
+    padding: 11px 0;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+
+
+    transition: all ease-in-out 500ms;
+}
+.login-form-1 .login-button:hover {
+    color: #555555;
+    transform: rotate(450deg);
+}
+.login-form-1 .login-button.clicked {
+    color: #555555;
+}
+.login-form-1 .login-button.clicked:hover {
+    transform: none;
+}
+.login-form-1 .login-button.clicked.success {
+    color: #2ecc71;
+}
+.login-form-1 .login-button.clicked.error {
+    color: #e74c3c;
+}
+/*=== 6. Form Invalid ===*/
+label.form-invalid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: block;
+    margin-top: -25px;
+    padding: 7px 9px;
+    background: #777777;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+label.form-invalid:after {
+    top: 100%;
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #777777;
+    border-width: 6px;
+}
+/*=== 7. Form - Main Message ===*/
+.login-form-main-message {
+    background: #ffffff;
+    color: #999999;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    height: 0;
+    padding: 0 20px 0 17px;
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+}
+.login-form-main-message.show {
+    height: auto;
+    opacity: 1;
+    padding: 10px 20px 10px 17px;
+}
+.login-form-main-message.success {
+    border-left-color: #2ecc71;
+}
+.login-form-main-message.error {
+    border-left-color: #e74c3c;
+}
+/*=== 8. Custom Checkbox & Radio ===*/
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked,
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label,
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: 0px solid #aaa;
+    background: #f0f0f0;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+    position: absolute;
+    color: #555555;
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after,
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after,
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before,
+[type="radio"]:disabled:not(:checked) + label:before,
+[type="radio"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #8c8c8c;
+    background-color: #878787;
+}
+[type="checkbox"]:disabled:checked + label:after,
+[type="radio"]:disabled:checked + label:after {
+    color: #555555;
+}
+[type="checkbox"]:disabled + label,
+[type="radio"]:disabled + label {
+    color: #8c8c8c;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before,
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+    border: 1px dotted #f6f6f6;
+}
+/* hover style just for information */
+label:hover:before {
+    border: 1px solid #f6f6f6 !important;
+}
+/*=== Customization ===*/
+/* radio aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    border-radius: 3px;
+}
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+    border-radius: 35px;
+}
+/* selected mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '✔';
+    top: 0;
+    left: 2px;
+    font-size: 14px;
+}
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+    content: '\2022';
+    top: 0;
+    left: 3px;
+    font-size: 30px;
+    line-height: 25px;
+}
+/*=== 9. Misc ===*/
+.logo {
+    padding: 15px 0;
+    font-size: 34px;     text-align: left;
+    color: #ffffff;     font-family: 'OpenSansLight';     letter-spacing: 1px;
+
+}
+
+
+
+
+.blog-post {
+    background: #6fb342 none repeat scroll 0 0;
+    padding: 15px;
+}
+
+
+
+.blog-post label {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.table_item_listing {
+    padding: 15px 15px 0;
+}
+
+.table a {
+    color: #6fb342;
+}
+.table a:hover {
+    color: #ff6700;
+}
+
+.item_list_category {
+    background: #6fb342 none repeat scroll 0 0;
+    color: #ffffff;
+    padding: 15px;    margin: 0 0 10px;
+}
+.item_listing > li {
+    background: #ffffff none repeat scroll 0 0;
+
+    display: block;
+    margin: 0 0 5px;
+    padding: 20px 10px;
+}
+
+.item_listing a {
+    display: block;
+    font-size: 17px;
+}
+
+.item_listing span {
+    color: #757575;
+}
+
+
+.item_title {
+    font-size: 20px;
+}
+.catgory_listing ul ul {
+    padding: 5px 0 0 16px;
+}
+.catgory_listing .list-group-item > a {
+    color: #ff6700;
+}
+
+
+.author_browse .table span {
+    background: #6fb342 none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 4px 10px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+@media (max-width: 640px ){
+    .navbar-toggle {
+        background: #6fb342 none repeat scroll 0 0;
+        margin: 23px 12px 0 0; border-color: #6fb342;
+    }
+    .inner_container iframe {
+        height: auto;
+    }
+    .search_form {
+
+        margin: 15px 0 0;
+
+    }
+    .side-box {
+        background: #000000 none repeat scroll 0 0;
+
+        padding-top: 12px;
+    }
+    .carousel-caption {
+        display: none;
+    }
+    .inner_container {
+        padding: 9px 14px 15px 20px;
+    }
+    .about-list span {
+
+
+        font-size: 25px;
+        height: 105px;
+        padding: 26px 0 3px;
+
+
+        width: 32px;
+    }
+    .h2, h2 {
+        font-size: 19px;
+    }
+}
+.narc-logo{}
+.navi-center{}
+@media (min-width: 1380px) {
+	.narc-logo{margin-left: 420px!important;}
+	.nep-gov{padding-left:10px;}
+	.navi-center{margin-top: -82px;margin-right: 417px;}
+}
+@media (max-width: 1379px) and (min-width: 1200px) {
+	.narc-logo{margin-left: 400px;}
+	.nep-gov{padding-left:10px;}	
+	.navi-center{margin-top: -82px;margin-right: 417px;}
+}
+@media (max-width: 1199px) and (min-width: 1100px) {
+	.narc-logo{margin-left: 310px;}
+	.nep-gov{padding-left:10px;}
+	.navi-center{margin-top: -82px;margin-right: 417px;}
+}
+@media (max-width: 1099px) and (min-width: 1025px) {
+	.narc-logo{margin-left: 310px;}
+	.nep-gov{padding-left:10px;}
+	.navi-center{margin-top: -82px;margin-right: 340px;}
+}
+@media (max-width: 1024px) and (min-width: 994px) {
+	.narc-logo{margin-left: 310px;}
+	.nep-gov{padding-left:10px;}
+	.navi-center{margin-top: -82px;margin-right: 310px;}
+}
+@media (max-width: 993px) and (min-width: 769px) {
+	.narc-logo{margin-left: 200px;}
+	.nep-gov{padding-left:10px;}
+	.navi-center{margin-top: -82px;margin-right: 270px;}
+}
+@media (max-width: 768px) {/* Display drop down of nav menu on hover */
+	.narc-logo{}
+	.nep-gov{}	
+}
+
+
+.book-cover{width: 200px; height:200px;}
+.category-cover{width: 100px; height:100px;}
+.list-image-height{height:100px; min-height:100px;}
